@@ -31,7 +31,7 @@ export function PromoBanner() {
   const { days, hours, minutes, seconds } = useCountdown()
 
   return (
-    <section className="relative py-7 md:py-12 overflow-hidden">
+    <section className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/72 backdrop-blur-sm" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF6B00]/70 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/50 to-transparent" />
@@ -111,7 +111,7 @@ export function PromoBanner() {
               </p>
               <motion.a
                 href={TRAINER.whatsappBookingUrl} target="_blank" rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 font-heading font-bold text-sm uppercase tracking-[0.18em] py-3.5 rounded-xl transition-colors duration-200"
+                className="w-full flex items-center justify-center gap-2 font-heading font-bold text-sm uppercase tracking-wide py-3.5 rounded-xl transition-colors duration-200"
                 style={{ background: 'linear-gradient(135deg, #C9A84C 0%, #F0C866 50%, #C9A84C 100%)', color: '#0a0a0a', boxShadow: '0 0 35px rgba(212,168,71,0.45)' }}
                 whileHover={{ scale: 1.04, boxShadow: '0 0 60px rgba(212,168,71,0.7)' }}
                 whileTap={{ scale: 0.97 }}
@@ -164,7 +164,7 @@ export function PromoBanner() {
               </p>
               <motion.a
                 href={TRAINER.whatsappBookingUrl} target="_blank" rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 bg-[#00FF7F] hover:bg-[#00e872] text-[#0a0a0a] font-heading font-bold text-sm uppercase tracking-[0.18em] py-3.5 rounded-xl transition-colors duration-200"
+                className="w-full flex items-center justify-center gap-2 bg-[#00FF7F] hover:bg-[#00e872] text-[#0a0a0a] font-heading font-bold text-sm uppercase tracking-wide py-3.5 rounded-xl transition-colors duration-200"
                 style={{ boxShadow: '0 0 35px rgba(0,255,127,0.4)' }}
                 whileHover={{ scale: 1.04, boxShadow: '0 0 65px rgba(0,255,127,0.7)' }}
                 whileTap={{ scale: 0.97 }}
@@ -234,7 +234,7 @@ export function PromoBanner() {
 
               <motion.a
                 href={TRAINER.whatsappBookingUrl} target="_blank" rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 font-heading font-bold text-sm uppercase tracking-[0.18em] py-3.5 rounded-xl border border-[#FF6B00]/50 text-[#FF8533] hover:bg-[#FF6B00]/10 transition-colors duration-200"
+                className="w-full flex items-center justify-center gap-2 font-heading font-bold text-sm uppercase tracking-wide py-3.5 rounded-xl border border-[#FF6B00]/50 text-[#FF8533] hover:bg-[#FF6B00]/10 transition-colors duration-200"
                 style={{ boxShadow: '0 0 25px rgba(255,107,0,0.25)' }}
                 whileHover={{ scale: 1.04, boxShadow: '0 0 50px rgba(255,107,0,0.55)' }}
                 whileTap={{ scale: 0.97 }}

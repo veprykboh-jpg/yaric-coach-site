@@ -30,18 +30,18 @@ export function WhyTrainSection() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6"
+          className="grid grid-cols-2 gap-3 md:gap-6"
         >
           {WHY_TRAIN.map((item) => {
             const Icon = iconMap[item.icon as keyof typeof iconMap]
             return (
               <motion.div key={item.title} variants={fadeUpVariants}>
-                <GlassCard hover className="p-5 md:p-8 group">
+                <GlassCard hover className="p-4 md:p-8 group">
                   <div className="w-11 h-11 rounded-xl bg-gold/10 border border-gold/20 flex items-center justify-center mb-4 group-hover:border-gold/50 transition-colors duration-300">
                     {Icon && <Icon size={19} style={{ color: '#D4A847', filter: 'drop-shadow(0 0 6px rgba(212,168,71,0.5))' }} />}
                   </div>
-                  <h3 className="font-display text-2xl text-white mb-2">{item.title.toUpperCase()}</h3>
-                  <p className="font-body text-white/82 text-sm leading-relaxed">{item.description}</p>
+                  <h3 className="font-display text-xl md:text-2xl text-white mb-1.5">{item.title.toUpperCase()}</h3>
+                  <p className="font-body text-white/82 text-xs md:text-sm leading-relaxed">{item.description}</p>
                 </GlassCard>
               </motion.div>
             )

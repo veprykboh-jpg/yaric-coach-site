@@ -18,14 +18,14 @@ export function ProgramsSection() {
 
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}
-          className="grid grid-cols-1 md:grid-cols-3 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4"
         >
           {PROGRAMS.map(program => {
             const Icon = iconMap[program.icon as keyof typeof iconMap]
             return (
               <motion.div key={program.id} variants={fadeUpVariants}>
                 <motion.div
-                  className="glass rounded-2xl p-5 md:p-7 h-full flex flex-col group cursor-default"
+                  className="glass rounded-2xl p-4 md:p-7 h-full flex flex-col group cursor-default"
                   whileHover={{ y: -6, borderColor: 'rgba(212,168,71,0.5)', boxShadow: '0 0 50px rgba(212,168,71,0.18)', transition: { duration: 0.25 } }}
                 >
                   {/* Icon */}
@@ -41,13 +41,13 @@ export function ProgramsSection() {
                   </p>
 
                   {/* Title */}
-                  <h3 className="font-display text-3xl text-white mb-3 leading-tight"
+                  <h3 className="font-display text-2xl md:text-3xl text-white mb-2 leading-tight"
                     style={{ textShadow: '0 0 20px rgba(255,255,255,0.1)' }}>
                     {program.title.toUpperCase()}
                   </h3>
 
                   {/* Description */}
-                  <p className="font-body text-white/72 text-sm leading-relaxed mb-5 flex-1">
+                  <p className="font-body text-white/72 text-xs md:text-sm leading-relaxed mb-4 flex-1 line-clamp-3 md:line-clamp-none">
                     {program.description}
                   </p>
 
