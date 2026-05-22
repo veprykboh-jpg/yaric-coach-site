@@ -10,7 +10,7 @@ const iconMap = { Swords, Dumbbell, Zap }
 
 export function ProgramsSection() {
   return (
-    <section id="programs" className="relative py-16 md:py-20">
+    <section id="programs" className="relative py-12 md:py-20">
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -25,7 +25,7 @@ export function ProgramsSection() {
             return (
               <motion.div key={program.id} variants={fadeUpVariants}>
                 <motion.div
-                  className="glass rounded-2xl p-7 h-full flex flex-col group cursor-default"
+                  className="glass rounded-2xl p-5 md:p-7 h-full flex flex-col group cursor-default"
                   whileHover={{ y: -6, borderColor: 'rgba(212,168,71,0.5)', boxShadow: '0 0 50px rgba(212,168,71,0.18)', transition: { duration: 0.25 } }}
                 >
                   {/* Icon */}

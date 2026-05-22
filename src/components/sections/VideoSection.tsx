@@ -121,7 +121,7 @@ export function VideoSection() {
           <motion.p
             initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={viewportOnce}
             transition={{ delay: 0.5 }}
-            className="text-center font-body text-white/35 text-xs mt-5 tracking-widest uppercase"
+            className="text-center font-body text-white/65 text-xs mt-5 tracking-widest uppercase"
           >
             Real training · Real clients · Real results
           </motion.p>

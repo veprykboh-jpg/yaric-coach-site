@@ -9,7 +9,7 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="relative py-16 md:py-20">
+    <section id="pricing" className="relative py-12 md:py-20">
       <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/30 to-transparent" />
 
@@ -22,8 +22,8 @@ export function PricingSection() {
         >
           {/* Single session */}
           <motion.div variants={fadeUpVariants}>
-            <div className="glass rounded-2xl p-7 h-full flex flex-col gold-border">
-              <p className="font-heading font-semibold text-white/55 text-xs uppercase tracking-[0.3em] mb-3">Single Session</p>
+            <div className="glass rounded-2xl p-5 md:p-7 h-full flex flex-col gold-border">
+              <p className="font-heading font-semibold text-white/80 text-xs uppercase tracking-[0.3em] mb-3">Single Session</p>
               <div className="flex items-baseline gap-2 mb-1">
                 <span className="font-display text-6xl text-white leading-none"
                   style={{ textShadow: '0 0 20px rgba(255,255,255,0.15)' }}>
@@ -34,7 +34,7 @@ export function PricingSection() {
                   AED
                 </span>
               </div>
-              <p className="font-body text-white/40 text-sm mb-6">Per session · No commitment</p>
+              <p className="font-body text-white/70 text-sm mb-6">Per session · No commitment</p>
               <ul className="space-y-3 mb-8 flex-1">
                 {['60-min personal session', 'Customized training', 'Flexible scheduling', 'No commitment'].map(f => (
                   <li key={f} className="flex items-center gap-3">
@@ -52,7 +52,7 @@ export function PricingSection() {
           {/* Package — featured */}
           <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-7 h-full flex flex-col bg-white/[0.04] border border-[#00FF7F]/25"
+              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col bg-white/[0.04] border border-[#00FF7F]/25"
               animate={{ boxShadow: ['0 0 20px rgba(0,255,127,0.08)', '0 0 60px rgba(0,255,127,0.32)', '0 0 20px rgba(0,255,127,0.08)'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
             >
@@ -73,7 +73,7 @@ export function PricingSection() {
                 </motion.div>
               </div>
 
-              <p className="font-heading font-semibold text-white/55 text-xs uppercase tracking-[0.3em] mb-3 mt-4">10-Session Package</p>
+              <p className="font-heading font-semibold text-white/80 text-xs uppercase tracking-[0.3em] mb-3 mt-4">10-Session Package</p>
               <div className="flex items-baseline gap-2 mb-1">
                 <span className="font-display text-6xl text-white leading-none"
                   style={{ textShadow: '0 0 20px rgba(255,255,255,0.15)' }}>
@@ -98,14 +98,14 @@ export function PricingSection() {
                   </span>
                 </div>
               </div>
-              <p className="font-body text-white/40 text-sm mb-6">10 sessions · Serious results</p>
+              <p className="font-body text-white/70 text-sm mb-6">10 sessions · Serious results</p>
 
               <ul className="space-y-3 mb-8 flex-1">
                 {['Everything in Single Session', 'Priority scheduling', 'Progress tracking', 'Nutrition guidance', 'Goal consultations'].map(f => (
                   <li key={f} className="flex items-center gap-3">
                     <CheckCircle size={14} className="text-[#00FF7F] shrink-0"
                       style={{ filter: 'drop-shadow(0 0 4px rgba(0,255,127,0.5))' }} />
-                    <span className="font-heading font-medium text-white/80 text-sm">{f}</span>
+                    <span className="font-heading font-medium text-white/90 text-sm">{f}</span>
                   </li>
                 ))}
               </ul>
@@ -135,7 +135,7 @@ export function PricingSection() {
         <motion.p
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={viewportOnce}
           transition={{ delay: 0.5 }}
-          className="text-center font-body text-white/40 text-xs mt-8 tracking-widest uppercase"
+          className="text-center font-body text-white/68 text-xs mt-8 tracking-widest uppercase"
         >
           200+ clients trained · Dubai&apos;s top-rated boxing coach · Results guaranteed
         </motion.p>

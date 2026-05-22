@@ -8,7 +8,7 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="relative py-16 md:py-20">
+    <section id="testimonials" className="relative py-12 md:py-20">
       <div className="absolute inset-0 bg-black/45 backdrop-blur-[1px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -21,7 +21,7 @@ export function TestimonialsSection() {
           {TESTIMONIALS.map(t => (
             <motion.div key={t.name} variants={fadeUpVariants}>
               <motion.div
-                className="relative glass rounded-2xl p-7 h-full flex flex-col"
+                className="relative glass rounded-2xl p-5 md:p-7 h-full flex flex-col"
                 whileHover={{ y: -5, borderColor: 'rgba(212,168,71,0.4)', boxShadow: '0 0 40px rgba(212,168,71,0.13)', transition: { duration: 0.25 } }}
               >
                 {/* Quote icon */}
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
                     style={{ textShadow: '0 0 12px rgba(255,255,255,0.1)' }}>
                     {t.name}
                   </p>
-                  <p className="font-body text-white/50 text-xs mt-0.5 tracking-wide">{t.role}</p>
+                  <p className="font-body text-white/72 text-xs mt-0.5 tracking-wide">{t.role}</p>
                 </div>
               </motion.div>
             </motion.div>

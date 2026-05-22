@@ -7,7 +7,7 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function PromoBanner() {
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative py-12 md:py-20 overflow-hidden">
       <div className="absolute inset-0 bg-black/72 backdrop-blur-sm" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF6B00]/70 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/50 to-transparent" />
@@ -34,7 +34,7 @@ export function PromoBanner() {
             <div className="h-[2px] w-20 rounded-full"
               style={{ background: 'linear-gradient(90deg, transparent, #FF6B00 40%, #FF8533 50%, #FF6B00 60%, transparent)', boxShadow: '0 0 14px rgba(255,107,0,0.8)' }} />
           </div>
-          <p className="font-body text-white/45 text-sm mt-4 tracking-wide">
+          <p className="font-body text-white/72 text-sm mt-4 tracking-wide">
             Act fast — spots fill up every month
           </p>
         </motion.div>
@@ -48,7 +48,7 @@ export function PromoBanner() {
           {/* ── Trial ── */}
           <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-7 h-full flex flex-col border border-[#D4A847]/35 overflow-hidden"
+              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#D4A847]/35 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #161000 0%, #0D0B00 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(212,168,71,0.07)', '0 0 50px rgba(212,168,71,0.26)', '0 0 20px rgba(212,168,71,0.07)'] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
@@ -73,7 +73,7 @@ export function PromoBanner() {
                 <div className="flex flex-col">
                   <span className="font-heading font-bold text-2xl text-[#D4A847] leading-none"
                     style={{ textShadow: '0 0 12px rgba(212,168,71,0.5)' }}>AED</span>
-                  <span className="font-body text-white/35 text-sm line-through">300 AED</span>
+                  <span className="font-body text-white/60 text-sm line-through">300 AED</span>
                 </div>
               </div>
               <div className="flex items-center gap-1.5 mb-5">
@@ -81,7 +81,7 @@ export function PromoBanner() {
                 <span className="font-heading font-bold text-sm text-[#FF8533] uppercase tracking-wide"
                   style={{ textShadow: '0 0 10px rgba(255,107,0,0.4)' }}>50% OFF — first session only</span>
               </div>
-              <p className="font-body text-white/65 text-sm leading-relaxed mb-7 flex-1">
+              <p className="font-body text-white/82 text-sm leading-relaxed mb-7 flex-1">
                 Start your journey with zero risk. Full 60-min session, fitness assessment, and a personalized plan built just for you.
               </p>
               <motion.a
@@ -94,14 +94,14 @@ export function PromoBanner() {
               >
                 <MessageCircle size={15} /> Book Trial · 150 AED
               </motion.a>
-              <p className="text-center font-body text-white/30 text-[10px] mt-2.5 tracking-widest uppercase">New clients only</p>
+              <p className="text-center font-body text-white/60 text-[10px] mt-2.5 tracking-widest uppercase">New clients only</p>
             </motion.div>
           </motion.div>
 
           {/* ── 10-Pack ── */}
           <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-7 h-full flex flex-col border border-[#00FF7F]/30 overflow-hidden"
+              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#00FF7F]/30 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #001A0D 0%, #000D07 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(0,255,127,0.07)', '0 0 60px rgba(0,255,127,0.32)', '0 0 20px rgba(0,255,127,0.07)'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
@@ -140,7 +140,7 @@ export function PromoBanner() {
                 <span className="font-heading font-bold text-sm text-[#FF8533]"
                   style={{ textShadow: '0 0 8px rgba(255,107,0,0.4)' }}>Save 500 AED</span>
               </div>
-              <p className="font-body text-white/65 text-sm leading-relaxed mb-7 flex-1">
+              <p className="font-body text-white/82 text-sm leading-relaxed mb-7 flex-1">
                 10 sessions, priority scheduling, progress tracking, nutrition guidance. Serious results for serious athletes.
               </p>
               <motion.a
@@ -153,14 +153,14 @@ export function PromoBanner() {
               >
                 <MessageCircle size={15} /> Get 10-Pack · Save 500
               </motion.a>
-              <p className="text-center font-body text-white/30 text-[10px] mt-2.5 tracking-widest uppercase">250 AED per session</p>
+              <p className="text-center font-body text-white/60 text-[10px] mt-2.5 tracking-widest uppercase">250 AED per session</p>
             </motion.div>
           </motion.div>
 
           {/* ── Urgency ── */}
           <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-7 h-full flex flex-col border border-[#FF6B00]/30 overflow-hidden"
+              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#FF6B00]/30 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #1A0500 0%, #0D0300 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(255,107,0,0.07)', '0 0 50px rgba(255,107,0,0.28)', '0 0 20px rgba(255,107,0,0.07)'] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -191,9 +191,9 @@ export function PromoBanner() {
                     style={{ boxShadow: '0 0 8px rgba(255,107,0,0.9)' }} />
                 </motion.div>
                 <Users size={13} className="text-[#FF8533]" />
-                <span className="font-heading font-semibold text-sm text-white/70">Only 3 new clients this month</span>
+                <span className="font-heading font-semibold text-sm text-white/88">Only 3 new clients this month</span>
               </div>
-              <p className="font-body text-white/65 text-sm leading-relaxed mb-7 flex-1">
+              <p className="font-body text-white/82 text-sm leading-relaxed mb-7 flex-1">
                 Yaroslav limits new clients to ensure elite personal attention. Once filled, the waitlist opens. Don&apos;t miss your window.
               </p>
               <motion.a
@@ -206,7 +206,7 @@ export function PromoBanner() {
               >
                 <ArrowRight size={15} /> Claim Your Spot
               </motion.a>
-              <p className="text-center font-body text-white/30 text-[10px] mt-2.5 tracking-widest uppercase">Dubai · This month only</p>
+              <p className="text-center font-body text-white/60 text-[10px] mt-2.5 tracking-widest uppercase">Dubai · This month only</p>
             </motion.div>
           </motion.div>
 

@@ -48,7 +48,7 @@ export function AboutSection() {
               <MapPin size={13} className="text-gold shrink-0" />
               <div>
                 <p className="font-heading font-semibold text-white text-sm leading-none">Dubai Based</p>
-                <p className="font-body text-[#999] text-xs mt-0.5">UAE</p>
+                <p className="font-body text-white/70 text-xs mt-0.5">UAE</p>
               </div>
             </motion.div>
             <div className="absolute -top-3 -left-3 w-16 h-16 border-l-2 border-t-2 border-gold/25 rounded-tl-xl pointer-events-none" />
@@ -57,7 +57,7 @@ export function AboutSection() {
           {/* Текст */}
           <motion.div variants={slideInRightVariants} initial="hidden" whileInView="visible" viewport={viewportOnce}>
             <SectionHeading label="About Your Coach" title="YAROSLAV GOLOD" />
-            <div className="mt-6 space-y-4 font-body text-white/60 leading-relaxed text-sm md:text-base">
+            <div className="mt-6 space-y-4 font-body text-white/82 leading-relaxed text-sm md:text-base">
               <p>Over 8 years mastering the science and art of combat sports. Based in Dubai, Yaroslav brings the discipline of a competitor and the precision of an elite coach to every session.</p>
               <p>Whether you're stepping into a gym for the first time or preparing for your first fight — he will push you far beyond where you thought you could go.</p>
             </div>
@@ -69,7 +69,7 @@ export function AboutSection() {
               ].map(item => (
                 <div key={item} className="flex items-start gap-2.5">
                   <CheckCircle size={14} className="text-gold mt-0.5 shrink-0" />
-                  <p className="font-body text-white/55 text-sm">{item}</p>
+                  <p className="font-body text-white/80 text-sm">{item}</p>
                 </div>
               ))}
             </div>
@@ -87,7 +87,7 @@ export function AboutSection() {
                 <p className="font-display text-4xl text-gold leading-none">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </p>
-                <p className="font-body text-white/40 text-[10px] uppercase tracking-widest mt-2">{stat.label}</p>
+                <p className="font-body text-white/65 text-[10px] uppercase tracking-widest mt-2">{stat.label}</p>
               </GlassCard>
             </motion.div>
           ))}

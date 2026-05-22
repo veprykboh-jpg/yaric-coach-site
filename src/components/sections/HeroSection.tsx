@@ -73,7 +73,7 @@ export function HeroSection() {
 
       {/* ── Контент по центру ─────────────────────────── */}
       <motion.div
-        className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 pt-28 pb-16 flex flex-col items-center text-center"
+        className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-20 md:pt-28 pb-12 md:pb-16 flex flex-col items-center text-center"
         style={{ x: textX, y: textY }}
       >
         {/* Nano-tech label */}
@@ -115,7 +115,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.05 }}
-          className="font-body text-white/60 text-base md:text-lg max-w-md leading-relaxed mb-9"
+          className="font-body text-white/82 text-base md:text-lg max-w-md leading-relaxed mb-9"
         >
           Elite boxing & fitness coaching in Dubai.
           Real technique. Real results.
@@ -165,7 +165,7 @@ export function HeroSection() {
             <div key={stat.label} className="flex items-center gap-8">
               <div className="text-center">
                 <p className="font-display text-2xl leading-none" style={{ color: stat.color }}>{stat.value}</p>
-                <p className="font-body text-white/30 text-[10px] uppercase tracking-widest mt-1">{stat.label}</p>
+                <p className="font-body text-white/65 text-[10px] uppercase tracking-widest mt-1">{stat.label}</p>
               </div>
               {i < 2 && <div className="w-px h-6 bg-white/10" />}
             </div>
