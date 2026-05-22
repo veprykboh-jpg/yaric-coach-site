@@ -14,7 +14,6 @@ export function PricingSection() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/30 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <SectionHeading label="Invest in Yourself" title="PRICING" center className="mb-6 hidden md:block" />
 
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}

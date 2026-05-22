@@ -63,17 +63,16 @@ export function PromoBanner() {
           </p>
         </motion.div>
 
-        {/* Cards — horizontal scroll on mobile, grid on desktop */}
+        {/* Cards — vertical stack on mobile, grid on desktop */}
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}
-          className="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-4 md:gap-5 pb-3 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 snap-x snap-mandatory md:snap-none scroll-smooth"
-          style={{ scrollbarWidth: 'none' }}
+          className="grid grid-cols-1 gap-2.5 md:grid-cols-3 md:gap-5"
         >
 
           {/* ── Trial ── */}
-          <motion.div variants={fadeUpVariants} className="min-w-[82vw] md:min-w-0 snap-start flex-shrink-0 md:flex-shrink md:flex-1">
+          <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#D4A847]/35 overflow-hidden"
+              className="relative rounded-2xl p-3 md:p-7 h-full flex flex-col border border-[#D4A847]/35 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #161000 0%, #0D0B00 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(212,168,71,0.07)', '0 0 50px rgba(212,168,71,0.26)', '0 0 20px rgba(212,168,71,0.07)'] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
@@ -81,7 +80,7 @@ export function PromoBanner() {
               <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-2xl"
                 style={{ background: 'linear-gradient(90deg, transparent, #E0BC6B 40%, #FFD700 50%, #E0BC6B 60%, transparent)', boxShadow: '0 0 10px rgba(224,188,107,0.6)' }} />
 
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+              <div className="hidden md:flex w-11 h-11 rounded-xl items-center justify-center mb-4"
                 style={{ background: 'rgba(212,168,71,0.12)', border: '1px solid rgba(212,168,71,0.3)' }}>
                 <motion.div animate={{ scale: [1, 1.18, 1] }} transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}>
                   <Sparkles size={20} style={{ color: '#E0BC6B', filter: 'drop-shadow(0 0 8px rgba(224,188,107,0.8))' }} />
@@ -93,7 +92,7 @@ export function PromoBanner() {
                 First Trial Session
               </p>
               <div className="flex items-baseline gap-2 mb-2">
-                <span className="font-display text-5xl md:text-6xl text-white leading-none"
+                <span className="font-display text-4xl md:text-6xl text-white leading-none"
                   style={{ textShadow: '0 0 20px rgba(255,255,255,0.12)' }}>150</span>
                 <div className="flex flex-col">
                   <span className="font-heading font-bold text-xl text-[#D4A847] leading-none"
@@ -106,7 +105,7 @@ export function PromoBanner() {
                 <span className="font-heading font-bold text-sm text-[#FF8533] uppercase tracking-wide"
                   style={{ textShadow: '0 0 10px rgba(255,107,0,0.4)' }}>50% OFF — first session only</span>
               </div>
-              <p className="font-body text-white/82 text-sm leading-relaxed mb-6 flex-1">
+              <p className="hidden md:block font-body text-white/82 text-sm leading-relaxed mb-6 flex-1">
                 Start your journey with zero risk. Full 60-min session, fitness assessment, and a personalized plan built just for you.
               </p>
               <motion.a
@@ -124,9 +123,9 @@ export function PromoBanner() {
           </motion.div>
 
           {/* ── 10-Pack ── */}
-          <motion.div variants={fadeUpVariants} className="min-w-[82vw] md:min-w-0 snap-start flex-shrink-0 md:flex-shrink md:flex-1">
+          <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#00FF7F]/30 overflow-hidden"
+              className="relative rounded-2xl p-3 md:p-7 h-full flex flex-col border border-[#00FF7F]/30 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #001A0D 0%, #000D07 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(0,255,127,0.07)', '0 0 60px rgba(0,255,127,0.32)', '0 0 20px rgba(0,255,127,0.07)'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
@@ -138,7 +137,7 @@ export function PromoBanner() {
                   style={{ boxShadow: '0 0 15px rgba(0,255,127,0.6)' }}>Best Value</span>
               </div>
 
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+              <div className="hidden md:flex w-11 h-11 rounded-xl items-center justify-center mb-4"
                 style={{ background: 'rgba(0,255,127,0.1)', border: '1px solid rgba(0,255,127,0.25)' }}>
                 <motion.div animate={{ scale: [1, 1.18, 1] }} transition={{ repeat: Infinity, duration: 1.8, delay: 0.3, ease: 'easeInOut' }}>
                   <Zap size={20} fill="#00FF7F" style={{ color: '#00FF7F', filter: 'drop-shadow(0 0 8px rgba(0,255,127,0.8))' }} />
@@ -148,7 +147,7 @@ export function PromoBanner() {
               <p className="font-heading font-bold text-xs uppercase tracking-[0.3em] mb-2"
                 style={{ color: '#00FF7F', textShadow: '0 0 14px rgba(0,255,127,0.6)' }}>Best Value Pack</p>
               <div className="flex items-baseline gap-2 mb-2">
-                <span className="font-display text-5xl md:text-6xl text-white leading-none"
+                <span className="font-display text-4xl md:text-6xl text-white leading-none"
                   style={{ textShadow: '0 0 20px rgba(255,255,255,0.12)' }}>2,500</span>
                 <span className="font-heading font-bold text-xl text-[#00FF7F] leading-none"
                   style={{ textShadow: '0 0 12px rgba(0,255,127,0.55)' }}>AED</span>
@@ -159,7 +158,7 @@ export function PromoBanner() {
                 <span className="font-heading font-bold text-sm text-[#FF8533]"
                   style={{ textShadow: '0 0 8px rgba(255,107,0,0.4)' }}>Save 500 AED</span>
               </div>
-              <p className="font-body text-white/82 text-sm leading-relaxed mb-6 flex-1">
+              <p className="hidden md:block font-body text-white/82 text-sm leading-relaxed mb-6 flex-1">
                 10 sessions, priority scheduling, progress tracking, nutrition guidance. Serious results for serious athletes.
               </p>
               <motion.a
@@ -177,9 +176,9 @@ export function PromoBanner() {
           </motion.div>
 
           {/* ── Urgency + Countdown ── */}
-          <motion.div variants={fadeUpVariants} className="min-w-[82vw] md:min-w-0 snap-start flex-shrink-0 md:flex-shrink md:flex-1">
+          <motion.div variants={fadeUpVariants}>
             <motion.div
-              className="relative rounded-2xl p-5 md:p-7 h-full flex flex-col border border-[#FF6B00]/30 overflow-hidden"
+              className="relative rounded-2xl p-3 md:p-7 h-full flex flex-col border border-[#FF6B00]/30 overflow-hidden"
               style={{ background: 'linear-gradient(160deg, #1A0500 0%, #0D0300 60%, #0a0a0a 100%)' }}
               animate={{ boxShadow: ['0 0 20px rgba(255,107,0,0.07)', '0 0 50px rgba(255,107,0,0.28)', '0 0 20px rgba(255,107,0,0.07)'] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
@@ -187,7 +186,7 @@ export function PromoBanner() {
               <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-2xl"
                 style={{ background: 'linear-gradient(90deg, transparent, #FF6B00, transparent)', boxShadow: '0 0 10px rgba(255,107,0,0.6)' }} />
 
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+              <div className="hidden md:flex w-11 h-11 rounded-xl items-center justify-center mb-4"
                 style={{ background: 'rgba(255,107,0,0.1)', border: '1px solid rgba(255,107,0,0.25)' }}>
                 <motion.div animate={{ opacity: [1, 0.35, 1] }} transition={{ repeat: Infinity, duration: 1.2 }}>
                   <Clock size={20} style={{ color: '#FF6B00', filter: 'drop-shadow(0 0 8px rgba(255,107,0,0.8))' }} />
@@ -198,7 +197,7 @@ export function PromoBanner() {
                 style={{ color: '#FF8533', textShadow: '0 0 14px rgba(255,107,0,0.6)' }}>Limited Availability</p>
 
               <div className="flex items-baseline gap-2 mb-2">
-                <span className="font-display text-5xl md:text-6xl text-white leading-none"
+                <span className="font-display text-4xl md:text-6xl text-white leading-none"
                   style={{ textShadow: '0 0 20px rgba(255,255,255,0.12)' }}>3</span>
                 <span className="font-heading font-bold text-xl text-[#FF8533] leading-none"
                   style={{ textShadow: '0 0 12px rgba(255,107,0,0.55)' }}>SPOTS</span>
@@ -212,12 +211,12 @@ export function PromoBanner() {
                 <span className="font-heading font-semibold text-sm text-white/90">Only 3 new clients this month</span>
               </div>
 
-              <p className="font-body text-white/82 text-sm leading-relaxed mb-5 flex-1">
+              <p className="hidden md:block font-body text-white/82 text-sm leading-relaxed mb-5 flex-1">
                 Yaroslav limits new clients to ensure elite personal attention. Once filled, the waitlist opens.
               </p>
 
               {/* Countdown */}
-              <div className="grid grid-cols-4 gap-1.5 mb-5">
+              <div className="grid grid-cols-4 gap-1 md:gap-1.5 mb-3 md:mb-5">
                 {[
                   { v: days, l: 'Days' },
                   { v: hours, l: 'Hrs' },
@@ -248,10 +247,6 @@ export function PromoBanner() {
 
         </motion.div>
 
-        {/* Swipe hint — mobile only */}
-        <p className="md:hidden text-center font-body text-white/40 text-[10px] uppercase tracking-widest mt-3">
-          Swipe to see all offers →
-        </p>
       </div>
     </section>
   )
