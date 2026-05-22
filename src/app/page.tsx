@@ -34,11 +34,11 @@ export default function Home() {
           <VideoSection />
           <ProgramsSection />
           <WhyTrainSection />
-          <TestimonialsSection />
           <FAQSection />
           <PricingSection />
           <InstagramSection />
           <ContactSection />
+          <TestimonialsSection />
         </main>
         <Footer />
         <StickyCTA />
