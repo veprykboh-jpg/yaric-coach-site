@@ -3,9 +3,10 @@ import { cn } from '@/lib/utils'
 interface InstagramIconProps {
   size?: number
   className?: string
+  style?: React.CSSProperties
 }
 
-export function InstagramIcon({ size = 24, className }: InstagramIconProps) {
+export function InstagramIcon({ size = 24, className, style }: InstagramIconProps) {
   return (
     <svg
       width={size}
@@ -17,6 +18,7 @@ export function InstagramIcon({ size = 24, className }: InstagramIconProps) {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={cn(className)}
+      style={style}
       aria-hidden="true"
     >
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
