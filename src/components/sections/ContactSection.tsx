@@ -29,7 +29,7 @@ export function ContactSection() {
           </motion.h2>
 
           <motion.p variants={fadeUpVariants}
-            className="font-body text-white/78 text-base max-w-md leading-relaxed">
+            className="font-body text-white text-base max-w-md leading-relaxed">
             Message on WhatsApp to book your first session. Response within hours.
           </motion.p>
 
@@ -55,7 +55,7 @@ export function ContactSection() {
 
           <motion.div variants={fadeUpVariants} className="flex items-center gap-2 text-white/60">
             <MapPin size={12} className="text-gold/40"/>
-            <p className="font-body text-white/60 text-xs">Premium facilities across Dubai · {TRAINER.whatsappDisplay}</p>
+            <p className="font-body text-white/85 text-xs">Premium facilities across Dubai · {TRAINER.whatsappDisplay}</p>
           </motion.div>
         </motion.div>
       </div>

@@ -115,7 +115,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.05 }}
-          className="font-body text-white/82 text-base md:text-lg max-w-md leading-relaxed mb-9"
+          className="font-body text-white text-base md:text-lg max-w-md leading-relaxed mb-9"
         >
           Elite boxing & fitness coaching in Dubai.
           Real technique. Real results.

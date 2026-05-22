@@ -51,7 +51,7 @@ export function Navbar() {
               <p className="font-heading font-semibold text-white text-sm leading-none tracking-wide">
                 Yaroslav Golod
               </p>
-              <p className="font-body text-[10px] text-[#8C8C8C] tracking-widest uppercase mt-0.5">
+              <p className="font-body text-[10px] text-white/75 tracking-widest uppercase mt-0.5">
                 Elite Coach · Dubai
               </p>
             </div>
@@ -63,7 +63,7 @@ export function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="font-heading text-sm font-medium text-[#8C8C8C] hover:text-gold transition-colors duration-200 tracking-wide cursor-pointer"
+                className="font-heading text-sm font-medium text-white/85 hover:text-gold transition-colors duration-200 tracking-wide cursor-pointer"
               >
                 {link.label}
               </button>
@@ -84,7 +84,7 @@ export function Navbar() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden p-2 text-[#8C8C8C] hover:text-gold transition-colors"
+            className="md:hidden p-2 text-white/85 hover:text-gold transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -113,7 +113,7 @@ export function Navbar() {
             >
               <div className="flex items-center justify-between p-6 border-b border-white/5">
                 <span className="font-heading font-semibold text-white tracking-wide">Menu</span>
-                <button onClick={() => setMobileOpen(false)} className="text-[#8C8C8C] hover:text-gold">
+                <button onClick={() => setMobileOpen(false)} className="text-white/85 hover:text-gold">
                   <X size={20} />
                 </button>
               </div>
@@ -125,7 +125,7 @@ export function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: i * 0.07 }}
                     onClick={() => handleNavClick(link.href)}
-                    className="w-full text-left py-3 px-4 font-heading font-medium text-white/70 hover:text-gold hover:bg-gold/5 rounded-xl transition-all duration-200 tracking-wide text-sm"
+                    className="w-full text-left py-3 px-4 font-heading font-medium text-white/90 hover:text-gold hover:bg-gold/5 rounded-xl transition-all duration-200 tracking-wide text-sm"
                   >
                     {link.label}
                   </motion.button>
