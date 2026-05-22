@@ -17,14 +17,14 @@ export function Footer() {
       {/* Background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-gold/5 blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10 md:py-14">
         {/* Large name */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={viewportOnce}
           transition={{ duration: 0.8 }}
-          className="mb-12 md:mb-16"
+          className="mb-8 md:mb-10"
         >
           <h2 className="font-display text-shimmer text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tight">
             YAROSLAV GOLOD

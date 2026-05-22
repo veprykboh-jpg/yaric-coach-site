@@ -9,7 +9,7 @@ import { fadeUpVariants, staggerContainer, viewportOnce } from '@/lib/animations
 
 export function InstagramSection() {
   return (
-    <section className="relative py-12 md:py-20 overflow-hidden">
+    <section className="relative py-7 md:py-12 overflow-hidden">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gold/5 blur-[120px] pointer-events-none" />
 
@@ -19,7 +19,7 @@ export function InstagramSection() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="flex flex-col items-center gap-5"
+          className="flex flex-col items-center gap-3"
         >
           <motion.div
             variants={fadeUpVariants}

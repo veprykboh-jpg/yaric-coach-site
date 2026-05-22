@@ -11,7 +11,7 @@ import { staggerContainer, fadeUpVariants, slideInLeftVariants, slideInRightVari
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative py-16 md:py-20">
+    <section id="about" className="relative py-7 md:py-12">
       {/* полупрозрачная подложка чтобы зал просвечивал */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
 
@@ -79,7 +79,7 @@ export function AboutSection() {
         {/* Stats */}
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8"
         >
           {STATS.map(stat => (
             <motion.div key={stat.label} variants={fadeUpVariants}>

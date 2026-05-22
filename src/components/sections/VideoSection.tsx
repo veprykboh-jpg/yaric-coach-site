@@ -14,7 +14,7 @@ export function VideoSection() {
   }, [])
 
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
+    <section className="relative py-7 md:py-12 overflow-hidden">
       <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4A847]/40 to-transparent" />
 
@@ -23,7 +23,7 @@ export function VideoSection() {
         {/* Heading */}
         <motion.div
           variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={viewportOnce}
-          className="text-center mb-10"
+          className="text-center mb-6"
         >
           <p className="font-heading font-semibold uppercase tracking-[0.35em] text-xs md:text-sm mb-3"
             style={{ color: '#E0BC6B', textShadow: '0 0 20px rgba(224,188,107,0.55)' }}>

@@ -9,12 +9,12 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="relative py-12 md:py-20">
+    <section id="pricing" className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/30 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <SectionHeading label="Invest in Yourself" title="START TODAY" center className="mb-10" />
+        <SectionHeading label="Invest in Yourself" title="START TODAY" center className="mb-6" />
 
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}

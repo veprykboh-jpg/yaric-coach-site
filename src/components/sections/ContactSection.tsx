@@ -9,13 +9,13 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function ContactSection() {
   return (
-    <section id="contact" className="relative py-16 md:py-20">
+    <section id="contact" className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}
-          className="flex flex-col items-center gap-5"
+          className="flex flex-col items-center gap-3"
         >
           <motion.div variants={fadeUpVariants} className="flex items-center gap-3">
             <div className="w-8 h-px bg-gold"/>

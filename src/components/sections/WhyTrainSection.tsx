@@ -18,12 +18,12 @@ const ticker = [
 
 export function WhyTrainSection() {
   return (
-    <section id="why" className="relative py-12 md:py-20 overflow-hidden">
+    <section id="why" className="relative py-7 md:py-12 overflow-hidden">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4A847]/25 to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <SectionHeading label="Why Train With Me" title="THE DIFFERENCE" center className="mb-10" />
+        <SectionHeading label="Why Train With Me" title="THE DIFFERENCE" center className="mb-6" />
 
         <motion.div
           variants={staggerContainer}
@@ -50,7 +50,7 @@ export function WhyTrainSection() {
       </div>
 
       {/* Marquee ticker */}
-      <div className="mt-14 overflow-hidden border-y border-white/5 py-4 relative z-10">
+      <div className="mt-8 overflow-hidden border-y border-white/5 py-3 relative z-10">
         <div className="flex animate-marquee whitespace-nowrap">
           {ticker.map((word, i) => (
             <span key={i} className="inline-flex items-center gap-4 mx-6">

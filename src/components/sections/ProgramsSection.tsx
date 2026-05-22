@@ -10,11 +10,11 @@ const iconMap = { Swords, Dumbbell, Zap }
 
 export function ProgramsSection() {
   return (
-    <section id="programs" className="relative py-12 md:py-20">
+    <section id="programs" className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <SectionHeading label="The Programs" title="TRAIN WITH PURPOSE" center className="mb-10" />
+        <SectionHeading label="The Programs" title="TRAIN WITH PURPOSE" center className="mb-6" />
 
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}

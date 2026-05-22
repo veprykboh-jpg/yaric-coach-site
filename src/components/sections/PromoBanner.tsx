@@ -31,7 +31,7 @@ export function PromoBanner() {
   const { days, hours, minutes, seconds } = useCountdown()
 
   return (
-    <section className="relative py-12 md:py-20 overflow-hidden">
+    <section className="relative py-7 md:py-12 overflow-hidden">
       <div className="absolute inset-0 bg-black/72 backdrop-blur-sm" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FF6B00]/70 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00FF7F]/50 to-transparent" />
@@ -44,7 +44,7 @@ export function PromoBanner() {
         <motion.div
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewportOnce}
           transition={{ duration: 0.6 }}
-          className="text-center mb-8 md:mb-12"
+          className="text-center mb-6 md:mb-8"
         >
           <p className="font-heading font-semibold uppercase tracking-[0.35em] text-xs md:text-sm mb-3"
             style={{ color: '#FF8533', textShadow: '0 0 20px rgba(255,107,0,0.55)' }}>

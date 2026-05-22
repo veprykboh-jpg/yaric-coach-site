@@ -8,11 +8,11 @@ import { staggerContainer, fadeUpVariants, viewportOnce } from '@/lib/animations
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonials" className="relative py-12 md:py-20">
+    <section id="testimonials" className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/45 backdrop-blur-[1px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-        <SectionHeading label="Client Results" title="WHAT CHAMPIONS SAY" center className="mb-10" />
+        <SectionHeading label="Client Results" title="WHAT CHAMPIONS SAY" center className="mb-6" />
 
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible" viewport={viewportOnce}

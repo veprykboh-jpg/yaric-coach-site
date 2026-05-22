@@ -73,7 +73,7 @@ export function HeroSection() {
 
       {/* ── Контент по центру ─────────────────────────── */}
       <motion.div
-        className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-20 md:pt-28 pb-12 md:pb-16 flex flex-col items-center text-center"
+        className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-20 md:pt-24 pb-8 md:pb-12 flex flex-col items-center text-center"
         style={{ x: textX, y: textY }}
       >
         {/* Nano-tech label */}
@@ -155,7 +155,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.5 }}
-          className="flex items-center justify-center gap-8 mt-12 pt-7 border-t border-[#00FF7F]/10 w-full max-w-sm"
+          className="flex items-center justify-center gap-8 mt-7 pt-5 border-t border-[#00FF7F]/10 w-full max-w-sm"
         >
           {[
             { value: '8+', label: 'Years', color: '#D4A847' },

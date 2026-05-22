@@ -14,13 +14,11 @@ import { InstagramSection } from '@/components/sections/InstagramSection'
 import { FAQSection } from '@/components/sections/FAQSection'
 import { GymPhotoBackground } from '@/components/ui/GymPhotoBackground'
 import { ScrollProgressBar } from '@/components/ui/ScrollProgressBar'
-import { CustomCursor } from '@/components/ui/CustomCursor'
 
 export default function Home() {
   return (
     <>
       <ScrollProgressBar />
-      <CustomCursor />
 
       {/* Gym photo background — fixed, visible through all sections */}
       <div className="fixed inset-0 z-0 pointer-events-none">

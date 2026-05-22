@@ -37,12 +37,12 @@ export function FAQSection() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="relative py-12 md:py-20">
+    <section id="faq" className="relative py-7 md:py-12">
       <div className="absolute inset-0 bg-black/55 backdrop-blur-[2px]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#D4A847]/30 to-transparent" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
-        <SectionHeading label="Got Questions?" title="FAQ" center className="mb-10" />
+        <SectionHeading label="Got Questions?" title="FAQ" center className="mb-6" />
 
         <motion.div
           variants={staggerContainer}
