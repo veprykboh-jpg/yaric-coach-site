@@ -112,6 +112,11 @@
   }
 }
 
+/* ── Custom cursor (hide default on desktop) ──── */
+@media (min-width: 768px) {
+  *, *:hover { cursor: none !important; }
+}
+
 /* ── Scrollbar ───────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #111; }

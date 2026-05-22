@@ -43,7 +43,7 @@ export function VideoSection() {
         <motion.div
           variants={fadeUpVariants} initial="hidden" whileInView="visible" viewport={viewportOnce}
           transition={{ delay: 0.15 }}
-          className="relative max-w-4xl mx-auto"
+          className="relative w-full md:max-w-4xl md:mx-auto"
         >
           {/* Animated glow frame */}
           <motion.div

@@ -47,7 +47,7 @@ export function SectionHeading({
           style={{ background: 'linear-gradient(90deg, transparent, #D4A847, transparent)', boxShadow: '0 0 12px rgba(212,168,71,0.7)' }} />
       </div>
       {subtitle && (
-        <p className="text-white/60 font-body text-base md:text-lg mt-5 max-w-xl leading-relaxed">
+        <p className="text-white/85 font-body text-base md:text-lg mt-5 max-w-xl leading-relaxed">
           {subtitle}
         </p>
       )}

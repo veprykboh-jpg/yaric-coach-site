@@ -9,12 +9,20 @@ import { TestimonialsSection } from '@/components/sections/TestimonialsSection'
 import { ContactSection } from '@/components/sections/ContactSection'
 import { PromoBanner } from '@/components/sections/PromoBanner'
 import { VideoSection } from '@/components/sections/VideoSection'
+import { WhyTrainSection } from '@/components/sections/WhyTrainSection'
+import { InstagramSection } from '@/components/sections/InstagramSection'
+import { FAQSection } from '@/components/sections/FAQSection'
 import { GymPhotoBackground } from '@/components/ui/GymPhotoBackground'
+import { ScrollProgressBar } from '@/components/ui/ScrollProgressBar'
+import { CustomCursor } from '@/components/ui/CustomCursor'
 
 export default function Home() {
   return (
     <>
-      {/* Gym photo background with smoke — fixed, visible through all sections */}
+      <ScrollProgressBar />
+      <CustomCursor />
+
+      {/* Gym photo background — fixed, visible through all sections */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <GymPhotoBackground />
       </div>
@@ -27,8 +35,11 @@ export default function Home() {
           <AboutSection />
           <VideoSection />
           <ProgramsSection />
+          <WhyTrainSection />
           <TestimonialsSection />
+          <FAQSection />
           <PricingSection />
+          <InstagramSection />
           <ContactSection />
         </main>
         <Footer />

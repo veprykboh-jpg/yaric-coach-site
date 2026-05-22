@@ -29,7 +29,7 @@ export function Footer() {
           <h2 className="font-display text-shimmer text-5xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tight">
             YAROSLAV GOLOD
           </h2>
-          <p className="font-heading text-[#8C8C8C] text-sm tracking-[0.3em] uppercase mt-3 ml-1">
+          <p className="font-heading text-white/80 text-sm tracking-[0.3em] uppercase mt-3 ml-1">
             Elite Boxing & Fitness Coach · Dubai
           </p>
         </motion.div>
@@ -52,7 +52,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="font-body text-[#8C8C8C] hover:text-gold transition-colors duration-200 text-sm"
+                    className="font-body text-white/80 hover:text-gold transition-colors duration-200 text-sm"
                   >
                     {link.label}
                   </a>
@@ -73,14 +73,14 @@ export function Footer() {
                   href={TRAINER.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-body text-[#8C8C8C] hover:text-gold transition-colors duration-200 text-sm"
+                  className="font-body text-white/80 hover:text-gold transition-colors duration-200 text-sm"
                 >
                   {TRAINER.whatsappDisplay}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold mt-0.5 shrink-0" />
-                <span className="font-body text-[#8C8C8C] text-sm">Dubai, UAE</span>
+                <span className="font-body text-white/80 text-sm">Dubai, UAE</span>
               </li>
             </ul>
           </motion.div>
@@ -103,7 +103,7 @@ export function Footer() {
                 <p className="font-heading font-medium text-white text-sm group-hover:text-gold transition-colors">
                   @{TRAINER.instagram}
                 </p>
-                <p className="font-body text-[#8C8C8C] text-xs">Instagram</p>
+                <p className="font-body text-white/80 text-xs">Instagram</p>
               </div>
             </a>
           </motion.div>
@@ -117,10 +117,10 @@ export function Footer() {
           transition={{ delay: 0.4 }}
           className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <p className="font-body text-[#8C8C8C] text-xs">
+          <p className="font-body text-white/80 text-xs">
             © {year} Yaroslav Golod. All rights reserved.
           </p>
-          <p className="font-body text-[#555] text-xs">
+          <p className="font-body text-white/65 text-xs">
             Dubai, UAE · Elite Boxing & Fitness
           </p>
         </motion.div>
