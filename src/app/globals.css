@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #111111;
+    --foreground: #FFFFFF;
+    --gold: #D4A847;
+    --gold-light: #F0C866;
+    --gold-dark: #9A7830;
+    --gold-glow: #FFB800;
+    --red: #CC2936;
+    --red-light: #E53E4A;
+    --red-glow: #FF3344;
+    --surface-1: #181818;
+    --surface-2: #202020;
+    --surface-3: #2A2A2A;
+    --muted: #999999;
+    --border: #2E2E2E;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-jakarta), 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  * { box-sizing: border-box; }
+}
+
+@layer utilities {
+  /* ── Glass ─────────────────────────────────── */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 168, 71, 0.15);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  /* ── Text effects ───────────────────────────── */
+  .text-gold-glow {
+    color: #D4A847;
+    text-shadow: 0 0 30px rgba(212, 168, 71, 0.7), 0 0 70px rgba(212, 168, 71, 0.3);
+  }
+
+  .text-shimmer {
+    background: linear-gradient(
+      90deg,
+      #D4A847 0%,
+      #F0C866 30%,
+      #FFD700 50%,
+      #F0C866 70%,
+      #D4A847 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: goldShimmer 3.5s linear infinite;
+  }
+
+  .text-red-glow {
+    color: #CC2936;
+    text-shadow: 0 0 30px rgba(204, 41, 54, 0.6), 0 0 60px rgba(204, 41, 54, 0.2);
+  }
+
+  /* ── Borders ────────────────────────────────── */
+  .gold-border { border: 1px solid rgba(212, 168, 71, 0.25); }
+  .red-border  { border: 1px solid rgba(204, 41, 54, 0.3); }
+
+  /* ── Section spacing (compact) ──────────────── */
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 5.5rem;
+      padding-bottom: 5.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
+  }
+
+  /* ── Red accent line ────────────────────────── */
+  .red-accent-line {
+    display: inline-block;
+    width: 3px;
+    height: 1.2em;
+    background: #CC2936;
+    border-radius: 2px;
+    box-shadow: 0 0 12px rgba(204,41,54,0.6);
+  }
+}
+
+/* ── Scrollbar ───────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 168, 71, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 168, 71, 0.7);
+}
+
+/* ── Selection ───────────────────────────────── */
+::selection {
+  background: rgba(212, 168, 71, 0.3);
+  color: #fff;
+}
+
+/* ── Focus ───────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid rgba(212, 168, 71, 0.7);
+  outline-offset: 2px;
+}
